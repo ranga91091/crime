@@ -1,0 +1,7 @@
+# file formats that are used for the data itself
+*.por
+*.xpt
+*.sas
+*.sps
+*.csv
+*.txt
