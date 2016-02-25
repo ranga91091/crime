@@ -101,5 +101,10 @@ Search first 5 columns of first 5 rows for 15719:
 $ head -n 5 data.csv | awk 'BEGIN{RS="\n"; FS=","}{print $1, $2, $3, $4, $5}' | grep "15719"
 ```
 
+You can also use cut instead of awk:
+```
+$ cut -d "," -f1 -f2 data.csv
+```
+
 Most operations we might want to do can probably be composed from the above
 commands. They're super helpful for checking one item when reading the codebook.
